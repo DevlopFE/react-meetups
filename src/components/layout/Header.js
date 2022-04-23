@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom';
 import { useMeetup } from '../../util-hooks/useMeetup';
-import classes from "./Main.module.css";
+import classes from "./Header.module.css";
 
 export const Header = () => {
   const headerRef = useRef(null);
