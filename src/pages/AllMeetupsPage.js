@@ -9,7 +9,7 @@ export default function AllMeetupsPage() {
 
   return (
     <section>
-      <h1>All Meetups</h1>
+      <h2>All Meetups</h2>
       <div className={classes.list}>
         <MeetupContainer meetups={allMeetups} />
       </div>

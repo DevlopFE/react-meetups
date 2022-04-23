@@ -8,7 +8,7 @@ export default function FavoritesPage() {
   const {favoritesMeetups} = MeetupState
   return (
     <section>
-      <h1>Favorites Page</h1>
+      <h2>Favorites Page</h2>
       <div className={classes.list}>
         <MeetupContainer meetups={favoritesMeetups} />
       </div>

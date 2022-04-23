@@ -4,7 +4,6 @@
   
   .image {
     width: 100%;
-    height: 20rem;
     overflow: hidden;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
@@ -19,28 +18,63 @@
     text-align: center;
     padding: 1rem;
   }
-  
+    
   .content h3 {
-    font-size: 1.25rem;
+    font-size: .8rem;
     color: #2c292b;
+  }
+
+  .content address {
+    font-size: .5rem;
+  }
+
+  .content p {
+    font-size: .8rem;
+  }
+
+  @media (min-width: 768px) {
+    .content h3 {
+      font-size: 1.5rem;
+    }
+
+    .content address {
+      font-size: 1.25rem;
+    }
   }
   
   .actions {
-    padding: 1.5rem;
+    padding: .8rem;
     text-align: center;
   }
   
   .actions button {
-    font: inherit;
     cursor: pointer;
     border: 1px solid #77002e;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem .8rem;
     border-radius: 4px;
+  }
+
+  @media (min-width: 768px) {
+    .actions {
+      padding: 1.5rem;
+      text-align: center;
+    }
+    
+    .actions button {
+      cursor: pointer;
+      border: 1px solid #77002e;
+      padding: 0.5rem 1.5rem;
+      border-radius: 4px;
+    }
   }
   
   .actions button:hover,
   .actions button:active {
     background-color: #ffe2ed;
+  }
+
+  .favBtn, .noFavBtn{
+    font-size: .7rem;
   }
 
   .favBtn{
@@ -51,4 +85,10 @@
   .noFavBtn{
     background-color: white;
     color: #77002e;
+  }
+
+  @media (min-width: 768px) {
+    .favBtn, .noFavBtn{
+      font-size: 1rem;
+    }
   }

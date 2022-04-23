@@ -15,7 +15,6 @@ export const MeetupReducer = (state, action) => {
     case 'SET_TOTAL_FAV_MEETUPS':
       return { ...state, totalFavorites:  action.payload }
     case 'HANDLE_CHANGE_MEETUP_FORM':
-      console.log('action.payload', action.payload)
       return { ...state, meetup:  {...state.meetup, [action.payload.id]:action.payload.value } }
     default:
       return state;
