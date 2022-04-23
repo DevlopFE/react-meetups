@@ -2,8 +2,7 @@
 /* eslint-disable testing-library/no-debugging-utils */
 import { shallow, mount } from "enzyme";
 import App from "./App";
-import MainNavigation from "./components/layout/MainNavigation";
-import Layout from "./components/layout/Layout";
+import { Main } from "./components/layout/Main";
 
 /**
  * Factory funcion to create a ShallowWrapper for the App component
@@ -19,12 +18,7 @@ test("renders App without crashing", () => {
   expect(wrapper.exists()).toBe(true);
 });
 
-test("renders the navigation component", () => {
+test("renders the main component", () => {
   const wrapper = setup();
-  expect(wrapper.find(MainNavigation).length).toBe(1);
-});
-
-test("renders the Layout component", () => {
-  const wrapper = setup();
-  expect(wrapper.find(Layout).length).toBe(1);
+  expect(wrapper.find(Main).length).toBe(1);
 });
