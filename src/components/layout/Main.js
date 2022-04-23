@@ -16,12 +16,14 @@ import classes from "./Main.module.css";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ScrollToTop from './ScrollToTop';
+import { useFetch } from '../../util-hooks/useFetch';
 
 
 export const Main = () => {
   const headerRef = useRef(null);
-  const { MeetupState:{totalFavorites}} = useMeetup()
+  const { MeetupState:{totalFavorites, allMeetups}, setAllMeetups} = useMeetup()
   const [y, setY] = useState(window.scrollY);
+  const { data } = useFetch({ url: "/data.json" });
   
   const handleScroll = (e) => {
     const header = headerRef.current;
@@ -41,8 +43,13 @@ export const Main = () => {
       window.removeEventListener("scroll", (e) => handleScroll(e));
     };
   }, [y]);
-  
 
+  useEffect(() => {
+  if(allMeetups.length === 0 && data){
+    setAllMeetups(data)
+  }
+  }, [data])
+  
   return (
     <>
     <BrowserRouter>
