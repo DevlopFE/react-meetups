@@ -8,12 +8,12 @@
 
 ### General info
  - Tasks performed:
-  - Adding functionality to add and remove fav meetups
-  - added routing to improve SEO
-  - added behaviour on header hiding on scroll down and showing on scroll up
-  - added new functionality on meetup form with a validator
-  - added some extra tests
-  - improved styling on small devices 
+   - Adding functionality to add and remove fav meetups
+   - added routing to improve SEO
+   - added behaviour on header hiding on scroll down and showing on scroll up
+   - added new functionality on meetup form with a validator
+   - added some extra tests
+   - improved styling on small devices 
 
 ### Technologies
   - React (Hooks)
