@@ -7,6 +7,16 @@
 
 
 ### General info
+ - Summarize:
+    - To achieve this goal I have used a context with a reducer/provider in order to handle the state of the application easily. I have created a custom hook that allows me to use the context in my components in a neat way. 
+    - I have created some extra components to be able to reuse and let the tests be easier to do. Furthermore I have created a function to create a valid id when creating a new meetup.
+    - Through useRef I control the header component in order to make it visible on scrolling up and hidden in scrolling down.
+    - Through Yup library I control the validation of the form.
+    - With react-tostify library I control the notifications.
+    - To achieve a better UX I have created a ScrollToTop component to put the page on top when the url changes.
+    - I have used the react-router-dom library to create a navigation bar with links to the different pages.
+    - I have changed and added some css in order to make it more user friendly on small devices with media queries.
+    
  - Tasks performed:
    - Adding functionality to add and remove fav meetups
    - added routing to improve SEO
@@ -19,7 +29,6 @@
   - React (Hooks)
   - css modules
   - React-testing-library
-
 
 ### Setup
  - It is required to get installed:
