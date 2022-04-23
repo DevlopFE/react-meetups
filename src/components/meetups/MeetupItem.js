@@ -17,6 +17,7 @@ export default function MeetupItem({meetup}) {
   }
 
   const checkIfIsFavorite = (meetup) => {
+   if (!MeetupState) return false
     const isFavorite = MeetupState.favoritesMeetups.find(m => m.id === meetup.id)
     return isFavorite ? true : false
   }
